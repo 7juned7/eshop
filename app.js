@@ -1,19 +1,22 @@
 
 const productSection = document.querySelector(".product-section")
-
+const cartValue = document.querySelector(".cart-badge");
 const mainContainer = document.querySelector(".main-container")
 const URL = "https://fakestoreapi.com/products";
+cartValue.innerHTML = localStorage.getItem("cartItemNo");
+console.log(localStorage)
+
 
 fetch(URL)
 .then(function(response){
     return response.json();
 })
 .then(function (data){
-   console.log(data);
+  
 
  
   for(var x in data){
-    console.log(data[x].image);
+   
      const el = document.createElement("div");
      el.classList.add("product");
      

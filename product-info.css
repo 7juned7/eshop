@@ -10,12 +10,13 @@
     --color-4--: #E6FFFD;
 }
 header{
-    padding: 2rem 4rem;
+    padding: .8rem 4rem;
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
     background-color: var(--color-3--);
     position: fixed;
     width: 100%;   
+z-index: 9999;
 
 }
 .logo{
@@ -67,6 +68,97 @@ color: black;
     display: flex;
     align-items: center;
     padding: 4rem;
-    background-color: #ffffff;
+    background-color:var(--color-4--);
+
     
 }
+
+.product{
+    display: flex;
+    padding: 2rem;
+    gap: 2.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.product-image{
+    padding: 1rem;
+    border-radius:3rem ;
+   background-color: #ffffff;
+   box-shadow: 0 0  10px 1px rgb(63, 60, 60);
+   height: fit-content;
+  
+}
+.product-image img{
+    width: 350px;
+}
+.product-image:hover{
+transform: scale(120%);
+cursor: pointer;
+}
+.product-description{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.title{
+    font-size: 2rem;
+}
+.product-description{
+    font-size: 1rem;
+
+    word-spacing: 2px;
+}
+.price{
+    width: fit-content;
+    font-size: 1.5rem;
+    background-color: var(--color-4--);
+    border-radius: 10px ;
+    padding: .2rem;
+}
+.rating{
+    font-size: 1.5rem;
+}
+.buy-product{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.add-to-cart{
+    border: none;
+    background-color: var(--color-2--);
+    padding: 1rem 2.5rem;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 1.5px solid var(--color-1--) ;
+}
+.proceed-to-payment{
+    border: none;
+    background-color: var(--color-3--);
+    padding: 1rem 2.5rem;
+    border-radius: 15px;
+    cursor: pointer;
+    border: .5px solid var(--color-1--);
+}
+.proceed-to-payment:hover{
+transform: scale(110%);
+}
+.add-to-cart:hover{
+    transform: scale(110%);
+    }
+
+
+
+
+
+
+
+
+
+
+    footer{
+        text-align: center;
+        width: 100%;
+        padding: 2rem;
+        background-color: var(--color-3--);
+    }
